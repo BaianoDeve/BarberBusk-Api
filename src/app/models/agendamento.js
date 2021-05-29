@@ -19,14 +19,14 @@ const agendamento = new Schema({
   },
   colaboradorId: {
     type: mongoose.Types.ObjectId,
-    ref: 'Colaboardor',
+    ref: 'Colaborador',
     required: true,
   },
   data: {
     type: Date,
     required: true,
   },
-  comisao: {
+  comissao: {
     type: Number,
     required: true,
   },

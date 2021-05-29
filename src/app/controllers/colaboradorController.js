@@ -3,7 +3,7 @@ const mongoose = require('../../database');
 const pagarme = require('../../services/pagarme');
 
 // Models
-const Colaborador = require('../models/Colaborador');
+const Colaborador = require('../models/colaborador');
 const SalaoColaborador = require('../models/relationship/salaoColaborador');
 const ColaboradorServico = require('../models/relationship/colaboradorServico');
 
