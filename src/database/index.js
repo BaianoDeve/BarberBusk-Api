@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const URI =
-  'mongodb+srv://salaoUser:PtBl1eYGbESRYHrj@cluster0.5oiea.mongodb.net/barberbuskDB?retryWrites=true&w=majority';
+  'mongodb+srv://salaoUser:0buzbA9gMipmon0F@cluster0.5oiea.mongodb.net/barberbuskDB?retryWrites=true&w=majority';
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
