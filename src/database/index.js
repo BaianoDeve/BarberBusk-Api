@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-const URI =
-  'mongodb+srv://salaoUser:0buzbA9gMipmon0F@cluster0.5oiea.mongodb.net/barberbuskDB?retryWrites=true&w=majority';
+const URI = process.env.MONGO_URI;
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
