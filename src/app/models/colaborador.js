@@ -18,10 +18,6 @@ const colaborador = new Schema({
     type: String,
     default: null,
   },
-  foto: {
-    type: String,
-    required: true,
-  },
   dataNascimento: {
     type: String,
     required: true,
