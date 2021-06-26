@@ -245,7 +245,7 @@ router.get('/salao/:salaoId', async (req, res) => {
 
       listaColaboradores.push({
         ...vinculo._doc,
-        especialidades,
+        especialidades: especialidades.map((e) => e.servicoId),
       });
     }
 
