@@ -130,7 +130,7 @@ router.post('/remove-arquivo', async (req, res) => {
   }
 });
 
-router.delete('/servicoId', async (req, res) => {
+router.delete('/:servicoId', async (req, res) => {
   try {
     const { servicoId } = req.params;
 
