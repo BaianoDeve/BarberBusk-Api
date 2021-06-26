@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const _ = require('lodash');
 
 const Horario = require('../models/horario');
 const ColaboradorServico = require('../models/relationship/colaboradorServico');
