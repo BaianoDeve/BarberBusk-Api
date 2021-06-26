@@ -166,27 +166,5 @@ router.get('/salao/:salaoId', async (req, res) => {
   }
 });
 
-// Nem mim perguntem para que serve essa rota
-router.post('/colaboradores', async (req, res) => {
-  try {
-    const colaboradorServico = await ColaboradorServico.find({
-      servicoId: { $in: req.body.especialidades },
-      status: 'A',
-    })
-      .populate('colaboradorId', 'nome')
-      .select('colaboradorId -_id');
-
-    const listaColaboradores = _.uniqBy(colaboradorServico, (i) =>
-      i.colaboradorId._id.toString()
-    ).map((i) => ({
-      label: i.colaboradorId.nome,
-      value: i.colaboradorId._id,
-    }));
-
-    return res.json({ error: false, listaColaboradores });
-  } catch (err) {
-    return res.status(400).send({ error: true, message: err.message });
-  }
-});
 
 module.exports = (app) => app.use('/servico', router);
