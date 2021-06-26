@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
 const Horario = require('../models/horario');
+const ColaboradorServico = require('../models/relationship/colaboradorServico');
 
 router.post('/', async (req, res) => {
   try {

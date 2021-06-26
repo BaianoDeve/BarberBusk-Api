@@ -5,7 +5,6 @@ const _ = require('lodash');
 
 const Servico = require('../models/servico');
 const Arquivo = require('../models/arquivo');
-const ColaboradorServico = require('../models/relationship/colaboradorServico');
 
 router.post('/', async (req, res) => {
   let busboy = new Busboy({ headers: req.headers });
